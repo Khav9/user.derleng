@@ -40,7 +40,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8 space-x-6">
+          <nav className="hidden md:flex items-center gap-3 md:gap-6 lg:gap-8 space-x-3">
             {navLinks.map((link) => (
               <Link
                 key={link.to}

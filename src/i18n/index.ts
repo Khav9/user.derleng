@@ -4,7 +4,7 @@ import en from "@/messages/en.json";
 import km from "@/messages/km.json";
 
 // Get stored language or default to 'en'
-const storedLanguage = localStorage.getItem("language") || "km";
+const storedLanguage = localStorage.getItem("language") || "en";
 
 // the translations
 // (tip move them in a JSON file and import them,
