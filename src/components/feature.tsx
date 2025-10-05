@@ -20,19 +20,19 @@ export function Features() {
   ]
 
   return (
-    <section className="py-12 md:py-16 bg-primary/5">
-      <div className="container mx-auto px-4">
+    <section className="py-12 md:py-16 bg-[#f97251]">
+      <div className="container mx-auto px-4 md:px-8 lg:px-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center space-y-4 p-6 rounded-xl bg-white hover:shadow-lg transition-shadow"
+              className="flex flex-col items-center text-center space-y-4 text-white"
             >
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                <feature.icon className="w-8 h-8 text-primary" />
+                <feature.icon className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-foreground">{feature.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{feature.description}</p>
+              <h3 className="text-lg md:text-xl font-bold">{feature.title}</h3>
+              <p className="text-sm leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>

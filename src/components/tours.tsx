@@ -68,10 +68,9 @@ export function Tours() {
   ]
 
   return (
-    <section id="tours" className="py-16 md:py-24 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="tours" className="py-12 md:py-16 bg-background">
+      <div className="container mx-auto px-4 md:px-8 lg:px-16">
         <div className="text-center space-y-4 mb-12 md:mb-16">
-          <p className="text-primary font-medium text-sm md:text-base">Highlight Cambodia Itineraries</p>
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
             Cambodia Tours 2025
           </h2>

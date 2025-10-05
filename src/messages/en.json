@@ -1,0 +1,20 @@
+{
+  "exploreing-your-world": "Exploreing Your World",
+  "menu": {
+    "home": "Home",
+    "travel-style": "Travel Style",
+    "tours": "Tours",
+    "hotels": "Hotels",
+    "about-us": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "your-gateway-to-cambodia": "Your Gateway to Cambodia",
+    "desc": "Discover the ancient temples, vibrant culture, and breathtaking landscapes of Southeast Asia's hidden gem",
+    "explore-tours": "Explore Tours",
+    "view-more-tours": "View More Tours",
+    "search": "Search",
+    "close-search": "Close search",
+    "search-tours": "Search tours"
+  }
+}
