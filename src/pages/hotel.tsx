@@ -370,7 +370,7 @@ function HotelCard({ hotel }: { hotel: typeof hotels[0] }) {
         {/* Badges */}
         <div className="absolute top-4 left-4 flex gap-2">
           {hotel.featured && (
-            <Badge className="bg-amber-500 hover:bg-amber-600 border-0 text-white">
+            <Badge className="bg-blue-500 hover:bg-blue-600 border-0 text-white">
               Featured
             </Badge>
           )}
