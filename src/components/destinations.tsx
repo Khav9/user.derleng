@@ -35,7 +35,7 @@ export function Destinations() {
   ];
 
   return (
-    <section id="tours" className="py-12 md:py-16 bg-background">
+    <section id="tours" className="p-28 md:py-16 bg-background">
         <div className="text-center space-y-4 mb-12 md:mb-16 container mx-auto px-4 md:px-8 lg:px-16">
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
             Our Top Destinations
@@ -45,7 +45,7 @@ export function Destinations() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {tours.map((destination, index) => (
             <DestinationCard key={index} {...destination} />
           ))}
