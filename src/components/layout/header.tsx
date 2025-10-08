@@ -12,7 +12,7 @@ export function Header() {
     { to: "/", label: "home" },
     { to: "/travel-style", label: "travel-style" },
     { to: "/tours", label: "tours" },
-    { to: "/hotels", label: "hotels" },
+    { to: "/hotel", label: "hotels" },
     { to: "/about", label: "about-us" },
     { to: "/contact", label: "contact" },
 
