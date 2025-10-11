@@ -8,7 +8,6 @@ import {
   Search,
   MapPin,
   Star,
-  Filter,
   Wifi,
   Car,
   Utensils,
@@ -18,6 +17,14 @@ import {
   Eye,
   Heart
 } from "lucide-react";
+
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 
 // Mock data for hotels
 const hotels = [
@@ -118,7 +125,7 @@ export function Hotel() {
   const [selectedPriceRange, setSelectedPriceRange] = useState(priceRanges[0]);
   const [selectedAmenities, setSelectedAmenities] = useState<string[]>([]);
   const [sortBy, setSortBy] = useState("featured");
-  const [showFilters, setShowFilters] = useState(false);
+  const [showFilters] = useState(false);
 
   const filteredHotels = hotels
     .filter(hotel => {
@@ -202,29 +209,23 @@ export function Hotel() {
               </div>
             </div>
 
-            {/* Filter Toggle for Mobile */}
-            <div className="flex items-center gap-4 w-full lg:w-auto">
-              <Button
-                variant="outline"
-                onClick={() => setShowFilters(!showFilters)}
-                className="lg:hidden"
-              >
-                <Filter className="w-4 h-4 mr-2" />
-                Filters
-              </Button>
+            <Select value={sortBy} onValueChange={setSortBy}>
+              <SelectTrigger className="w-[200px] select-none">
+                <SelectValue>
+                  {sortBy === "featured" && "Featured"}
+                  {sortBy === "price-low" && "Price: Low to High"}
+                  {sortBy === "price-high" && "Price: High to Low"}
+                  {sortBy === "rating" && "Highest Rated"}
+                </SelectValue>
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="featured">Featured</SelectItem>
+                <SelectItem value="price-low">Price: Low to High</SelectItem>
+                <SelectItem value="price-high">Price: High to Low</SelectItem>
+                <SelectItem value="rating">Highest Rated</SelectItem>
+              </SelectContent>
+            </Select>
 
-              {/* Sort Dropdown */}
-              <select
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value)}
-                className="px-4 py-2 rounded-lg border border-gray-300 focus:border-primary focus:ring-1 focus:ring-primary"
-              >
-                <option value="featured">Featured</option>
-                <option value="price-low">Price: Low to High</option>
-                <option value="price-high">Price: High to Low</option>
-                <option value="rating">Highest Rated</option>
-              </select>
-            </div>
           </div>
 
           {/* Expanded Filters */}
