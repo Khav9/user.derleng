@@ -376,7 +376,7 @@ function HotelCard({ hotel }: { hotel: typeof hotels[0] }) {
             </Badge>
           )}
           {hotel.discount > 0 && (
-            <Badge className="bg-green-500 hover:bg-green-600 border-0 text-white">
+            <Badge className="bg-green-500 border-0 text-white">
               -{hotel.discount}%
             </Badge>
           )}

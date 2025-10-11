@@ -9,6 +9,7 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import Layout from "./components/layout/layout";
 import Home from "./pages/home";
 import { Hotel } from "./pages/hotel";
+import { AboutPage } from './pages/about';
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ export default function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/hotel" element={<Hotel />} />
+            <Route path="/about" element={<AboutPage />} />
             <Route
               path="/tours"
               element={
